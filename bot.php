@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 			
 			if($text ='help')
 			{
-				$text = 'Call 191'
+				$text = 'Call 191';
 			}
 			else
 			{
