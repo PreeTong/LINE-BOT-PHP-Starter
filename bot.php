@@ -14,14 +14,11 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$text = $event['message']['text'];
 			
-			if($text ='help')
+			if($text == 'help')
 			{
 				$text = 'Call 191';
 			}
-			else
-			{
-					
-			}
+			
 			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
@@ -55,4 +52,3 @@ if (!is_null($events['events'])) {
 	}
 }
 echo "OK";
-echo "OK2";
