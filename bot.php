@@ -13,6 +13,16 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$text = $event['message']['text'];
+			
+			if($text ='help')
+			{
+				$text = 'Call 191'
+			}
+			else
+			{
+					
+			}
+			
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
