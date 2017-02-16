@@ -30,10 +30,11 @@ if (!is_null($events['events'])) {
 				'type' => 'text',
 				'text' => $text
 				},
+				
 				{
-				'type' => 'sticker',
-				'packageId' => '2',
-				'stickerId' => '24'
+	  			'type' => 'sticker',
+  				'packageId' => '1',
+  				'stickerId' => '1'
 				}
 			];
 
