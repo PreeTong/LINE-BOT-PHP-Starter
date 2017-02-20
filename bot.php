@@ -31,7 +31,7 @@ if (!is_null($events['events'])) {
 			];
 			
 			if($event['type'] == 'message' && $event['message']['type'] == 'sticker') {
-			$sticker = $event['message']['sticker'];
+			
 				
 			}
 			
