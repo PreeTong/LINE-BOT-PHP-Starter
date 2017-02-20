@@ -34,7 +34,10 @@ if (!is_null($events['events'])) {
 			$packageId = $event['message']['packageId'];
 			$stickerId = $event['message']['stickerId'];
 			if ($packageId = '1' && $stickerId = '1')
-			
+			$messages = [
+				'type' => 'text',
+				'text' => $packageId
+			];
 		
 			}
 			
