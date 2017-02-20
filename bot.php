@@ -32,10 +32,7 @@ if (!is_null($events['events'])) {
 			
 			if($event['type'] == 'message' && $event['message']['type'] == 'sticker') {
 			$sticker = $event['message']['sticker'];
-				$stickermessages = [
-				'type' => 'sticker',
-				'packageId' => '1',
-				'stickerId' => '1'
+				
 			}
 			
 			// Make a POST Request to Messaging API to reply to sender
