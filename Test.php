@@ -1,9 +1,5 @@
 <?php
-$access_token = 'Lc9YWVYk4V568kkxsRx39DcF9TQJzs+h1tgLO4Bp3W6Srm1ZlXm8XuTGfPXUhsEm/pJjk3HM4CAM0uKyXHXjEZtFa6jW6nKBbrM5ScR76OzBGv2aVsCzCdAZNX41i+scHHD4wa77RISbPAOPwoIDvAdB04t89/1O/w1cDnyilFU=';
-
-$channelSecret = 'e3d5f27d85d1b1afb3f8dbe589cd1ce5'; // Channel secret string
-$httpRequestBody = 'group'; // Request body string
-$hash = hash_hmac('sha256', $httpRequestBody, $channelSecret, true);
-$signature = base64_encode($hash);
-// Compare X-Line-Signature request header string and the signature
-
+$uri = "https://www.googleapis.com/freebase/v1/mqlread?query=%7B%22type%22:%22/music/artist%22%2C%22name%22:%22The%20Dead%20Weather%22%2C%22album%22:%5B%5D%7D";
+$response = \Httpful\Request::get($uri)->send();
+ 
+echo 'The Dead Weather has ' . count($response->body->result->album) . " albums.\n";
